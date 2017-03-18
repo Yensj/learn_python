@@ -2,6 +2,10 @@
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
+import logging
+logging.basicConfig(
+        format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+        level=logging.INFO)
 
 def main():
     updater = Updater("337618195:AAFlOtkSrbEyf4xkYUpFt2kEHNZWHM1BV-Q")
