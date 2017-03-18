@@ -2,9 +2,6 @@
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
-import locale; locale.getlocale()
-('ru_RU', 'UTF-8')
-
 import logging
 logging.basicConfig(
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -23,9 +20,9 @@ def main():
     updater.idle()
 
 def greet_user(bot, update):
-    print('Hi there! /start')
+    print('Привет! /start')
     print(update)
-    bot.sendMessage(update.message.chat_id, text="Let's talk!")
+    bot.sendMessage(update.message.chat_id, text="Давай общаться!")
 
 def show_error(bot, update, error):
     print(error)
