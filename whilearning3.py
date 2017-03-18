@@ -6,4 +6,8 @@ def ask_user():
         user_answer = input()
         if user_answer == 'Хорошо':
             break
+        elif user_answer == 'Пока':
+            break
+        else:
+            print('Сам ты {}'.format(user_answer))
 ask_user()
